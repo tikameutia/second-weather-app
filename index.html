@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter a city"
+            required
+            autofocus
+            autocomplete="off"
+            id="search-input"
+          />
+          <input type="submit" value="search" id="search-button" />
+        </form>
+      </header>
+      <main class="weather-app">
+        <div class="weather-information">
+          <h1 id="city">San Francisco</h1>
+          <p>
+            <span id="current-day-and-time"></span>
+            <br />
+            Humidity:
+            <span class="condition"> <span id="humidity">60</span>%</span>,
+            Wind:
+            <span class="condition"><span id="wind-speed">0</span>km/h</span>
+          </p>
+          <div class="weather-icon">☁️</div>
+          <h3 id="weather-description">Cloudy</h3>
+          <p></p>
+        </div>
+        <h2 class="temperature"><span id="temperature">15</span>°C</h2>
+      </main>
+      <footer>
+        This project was coded by
+        <a
+          href="https://www.shecodes.io/graduates/19205-tika-meutia-lubis"
+          target="_blank"
+          >Tika Meutia Lubis</a
+        >
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
